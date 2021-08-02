@@ -6,7 +6,7 @@ from flaskext.mysql import MySQL
 from pymysql.cursors import DictCursor
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 mysql = MySQL(cursorclass=DictCursor)
 
 
